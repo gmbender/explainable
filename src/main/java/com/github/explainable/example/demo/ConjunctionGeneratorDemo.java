@@ -57,7 +57,7 @@ public final class ConjunctionGeneratorDemo {
 		// Create an object that can generate random conjunctive queries using the templates.
 		ConjunctionGenerator randConj = ConjunctionGenerator.createAndSeed(templateViews);
 
-		for (int i = 0; i < 100; i++) {
+		for (int i = 0; i < 5; i++) {
 			// Generate a new conjunctive query.
 			Conjunction nextConj = randConj.nextWithRandomDist(LAMBDA);
 
@@ -66,6 +66,7 @@ public final class ConjunctionGeneratorDemo {
 
 			// Print out the SQL query.
 			System.out.println(nextQuery);
+			System.out.println();
 		}
 	}
 }
