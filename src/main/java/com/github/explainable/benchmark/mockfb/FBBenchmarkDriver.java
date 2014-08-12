@@ -72,7 +72,6 @@ public final class FBBenchmarkDriver implements Runnable {
 	private static final int TRIAL_COUNT = 5;
 
 	private static final ImmutableList<BenchmarkStage> ACTIVE_STAGES
-			//= ImmutableList.of(BenchmarkStage.EXPLAIN);
 			= ImmutableList.copyOf(BenchmarkStage.values());
 
 	private final ImmutableList<View> templateViews;

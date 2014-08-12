@@ -96,8 +96,6 @@ public class ConjunctionGeneratorTest {
 		ConjunctionGenerator viewGen = ConjunctionGenerator.create(ImmutableList.of(view), random);
 		Conjunction actual = viewGen.nextWithDefaultDist();
 
-		System.out.println(actual);
-		System.out.println(expected);
 		assertTrue(expected.isHomomorphicTo(actual));
 	}
 

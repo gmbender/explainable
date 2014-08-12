@@ -32,7 +32,8 @@ import static com.github.explainable.sql.type.TypeSystem.numeric;
 import static com.github.explainable.sql.type.TypeSystem.string;
 
 /**
- * Sample schema based on the Sailors and Boats example from the Cow Book.
+ * Sample schema based on the Sailors and Boats example from the Cow Book (i.e., Gehrke and
+ * Ramakrishnan's Database Management Systems).
  */
 public final class CowSqlSchema {
 	public static final TypedRelation SAILORS = TypedRelationImpl.builder().setName("Sailors")
